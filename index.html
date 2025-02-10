@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sondage super sérieux </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            background-color: #ffcccb;
+            flex-direction: column;
+        }
+        h1 {
+            font-size: 24px;
+            color: #d10000;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .oui {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 24px;
+            padding: 30px 60px;
+        }
+        .non {
+            background-color: #d10000;
+            color: white;
+            font-size: 14px;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chère Mme Beaupré, vous avez été spécialement sélectionnée pour participer à notre grand Sondage de l'Amour ❤️.</h1>
+    <h1>Une question essentielle vous est posée : Accepteriez-vous d’être ma Valentine ? ❤️</h1>
+    <div class="buttons">
+        <button class="oui" onclick="yesClicked()">Oui</button>
+        <button class="non" onclick="noClicked()">Non</button>
+    </div>
+    <script>
+        function yesClicked() {
+            window.location.href = 'detailsoui.html';
+        }
+        function noClicked() {
+            window.location.href = 'detailsnon.html';
+        }
+    </script>
+</body>
+</html>
